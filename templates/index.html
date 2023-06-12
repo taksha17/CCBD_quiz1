@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Index - Taksha S Thosani</title>
+</head>
+<body>
+<h5><a href="/">Home</a></h5>
+<center><h3>CSE 6332 - Quiz-0</h3></center>
+<!-- <h3>Q10.Showing name , Id and Image ( Text in large fonts) </h3>
+<center><h10><font size="15">Taksha S Thosani - 86312</font></h10></center><br/>
+<center><img src="cat.jpg" alt="cat jpeg"></center><br/> -->
+
+<h3>Q10.Showing name , Id and Image ( Text in large fonts) </h3>
+<center><h10><font size="15">Taksha S Thosani - 86312</font></h10></center><br/>
+<center><img src="{{ url_for('static', filename='cat.jpg') }}" alt="cat jpeg"></center><br/>
+
+</br>
+<p align ="left"></p>
+<h3>Q11. Name, description and picture through teln.</h3>
+<form action="/teln" method="post">
+    Enter teln. :- <input type="text" name="teln"><br/>
+    <input type="submit" Value="Submit"/>
+</form><br/><br/>
+</p>
+
+<h3>Q12. Name,Descript & Picture From Room Number Range.</h3>
+<form action="/rnrange" method="post">
+    Enter room no 1. :- <input type="text" name="rn1"><br/>
+    Enter room no 2. :- <input type="text" name="rn2"><br/>
+    <input type="submit" Value="Submit"/>
+</form><br/><br/>
+
+<h3>Q13. Update description .</h3>
+<form action="/room" method="post">
+    Enter name. :- <input type="text" name="name"><br/>
+    Enter updated desc. :- <input type="text" name="updated_desc"><br/>
+    <input type="submit" Value="Submit"/>
+</form><br/><br/>
+
+</body>
+</html>
