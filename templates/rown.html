@@ -4,8 +4,7 @@
 </head>
 <body>
 <h5><a href="/">Home</a></h5>
-<center><h3>CSE 6332 - Quiz-0</h3></center>
-<center><h4>Taksha S Thosani - 86312</h4></center><br/><br/>
+<center><h10><font size="15">Taksha S Thosani - 86312</font></h10></center><br/>
 
 <div>
 
@@ -13,7 +12,7 @@
     {% for record in records %}
       <div>
         <h4>{{ record.name }}</h4>
-        <h4>{{ record.description }}</h4>
+        <h4>{{ record.seatno }}</h4>
         <img src="{{ record.image_path }}" alt="Preview" width="500" height="600">
       </div>
     {% endfor %}

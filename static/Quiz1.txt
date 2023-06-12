@@ -5,7 +5,7 @@ Last 4 digits ID:
 CSE 6332, Cloud Computing					
 
 
-Quiz Q0, Summer 2023   (c) DL, UTA, 2023
+Quiz Q1, Summer 2023   (c) DL, UTA, 2023
 
 INFORMATIONAL
 
@@ -55,24 +55,23 @@ QUIZ QUESTIONS
 
 Show and submit code, when each part is complete, raise your hand and then show us:
 
-
  10. Show a web page and interface (which resides on the cloud provider) with your name as it appears on your ID card 
-     as well as your the last 5 digits of your student ID in large font at the top of every web page dispayed (for this quiz)
-     On the first page show either the picture cat.jpg or your picture below your name and ID number.
+     as well as the last 5 digits of your student ID in large font at the top of every web page dispayed (for this quiz)
+     On the first page show either the picture md.jpg or your picture below your name and ID number.
 
- 11. Through a web interface (page), allow user to give a teln and you will show the name, descript and   
-     picture on a web page.
+ 11. Through a web interface (page), allow user to give a single row number and you will show the names, seats and   
+     picture of anyone on that row on a web page.
 
- 12. Through a web interface (page), allow user to give a room number range, and you show the corresponding
-     matching names, descript and pictures (or show "no information or picture available").
+ 12. Through a web interface (page), allow user to give a range of rows or a single seat letter (or both), and you show 
+     the corresponding matching names, seats, notes and pictures (or show "no information or picture available"). 
+     (If both given, show only exact matches, if there are any. Some examples are: "Rows 30 through 40" - two matching or 
+      "Seat d" - 2 matching, or "rows 20 through 40, seat c" - no matching.)
 
- 13. (Web) Allow a user to give a name and a new descript for that name.
+ 13. Allow a user to add a new user, delete a user, or modify any attribute of an existing user (by name) 
 
- 14. Show us, in a link, the application running and we will try it out. Only for parts 10, 11, 12, 13. (and Bonus)
+ 14. Show us, in a link, the application running and we will try it out. Only for parts 10, 11, 12, 13. 
 
- 15. Bonus, allow a user to add a new user, delete a user, or modify any attribute of an existing user (by name)  
-
- 16. When complete, return (send) this quiz
+ 15. When complete, return (send) this quiz
      If you finish early, send this immediately, otherwise send between
      the end of class and no more than 1 minute after that.
 
