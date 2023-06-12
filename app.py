@@ -162,6 +162,29 @@ def remove_details_message_display():
             return render_template('removedetails_validation.html', message="Record removed successfully.")
         else:
             return render_template('removedetails_validation.html', error="Record not found.")
+        
+@app.route("/adduser", methods=['GET', 'POST'])
+def add_details_by_name():
+    return render_template('adduserbyname.html')
+
+@app.route("/adduserbn", methods=['GET', 'POST'])
+def adduserbn():
+    if request.method == 'POST':
+        name = request.form['name']
+        row = request.form['row']
+        seat = request.form['seat']
+        pic = request.files['pic']
+        notes = request.form['notes']
+
+        
+        with open('static/q1c.csv', 'a') as csv_file:
+            csv_writer = csv.writer(csv_file)
+            csv_writer.writerow([name, row, seat, pic.filename, notes])
+
+        return render_template('adduser.html', message="User added successfully.")
+    else:
+        return render_template('adduser.html')
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8080)
